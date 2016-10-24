@@ -123,11 +123,11 @@ line (?<line>\d+) column (?<col>\d+) - (?:(?<err>Error)|(?<war>Warning)|(?<inf>I
  the regres search line for line, so the expression will find all the characters
  until the end of the line.
 
-Remember the regex needs to have: two named sub-expressions "line" "col" that
- return decimal numbers.
+Remember the regex needs to have: two named sub-expressions "?&lt;line&gt;
+ "?&lt;col&gt; that return decimal numbers.
 
-Three named expresion that return the warning status "?&lt;err&gt" "?&lt;err&gt" "?&lt;err&gt"
- should return the expresion used for the error, warning or info. But they are
- optional.
+Three named expresion that return the warning status "?&lt;err&gt;" "?&lt;war&gt;"
+ "?&lt;info&gt;" should return the expresion used for the error, warning or info.
+ But they are optional.
 
-And of course the "&lt;message&gt" that returns the message.
+And of course the "?&lt;message&gt;" that returns the message.
